@@ -4,13 +4,14 @@
 	<meta charset="utf-8">
 	<title>{{title}}</title>
 	<script type="text/javascript" src="components/jquery/dist/jquery.min.js"></script>
+
 	<link rel="stylesheet" type="text/css" href="components/bootstrap/dist/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script type="text/javascript" src="components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 	<header>
-		<nav class="navbar navbar-default">
+		<nav class="navbar navbar-default container header">
 			<div class="navbar-header">
 			      	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-main"  aria-expanded="false">
 				        <span class="sr-only">Toggle navigation</span>
@@ -21,18 +22,17 @@
 	    	</div>
 			<div class="collapse navbar-collapse" id="nav-main">
 			 	<ul class="nav navbar-nav">
-			 		<li><a href="/"><img src="images/logo.png"/></a></li>
-					<li><a href="/">Home</a></li>
-					<li><a href="/abouts">Abouts</a></li>
-					<li><a href="/albums">Albums</a></li>
-					<li><a href="/blog">Blog</a></li>
+					<li><a class="header" href="/">Home</a></li>
+					<li><a class="header" href="/abouts">Abouts</a></li>
+					<li><a class="header" href="/albums">Albums</a></li>
+					<li><a class="header" href="/blog">Blog</a></li>
 				</ul>
 			</div>
 		</nav>	
 	</header>
-
-	{{{body}}}	
-
+	<div class="container">
+		{{{body}}}	
+	</div>
 	<footer class="footer">
 		<div class="container">
 			<p class="txtFooter">Copyright by Trọng Trần</p>
